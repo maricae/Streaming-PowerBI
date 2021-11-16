@@ -22,8 +22,6 @@ Open-MySQLConnection -server "seu_servidor" -database "sua_base" # Digitar seu u
 get-help Invoke-SQLQuery
 
 ## Adicionar os dados da query no PowerBI ##
-# Foram Adicionadas três consultas, uma para cada dataset, ao dashboard online do Power BI #
-# A busca será feita em loop (indefinidamente) #
 $i = 10
 
 For($i -le 10) {
