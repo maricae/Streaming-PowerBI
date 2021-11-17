@@ -5,4 +5,4 @@ Elaborei um script no PowerShell que possibilita a inclusão de um novo dataset 
 1. No Windows PowerShell, foram feitas as instalações dos módulos; 
 2. Foi feita a conexão com o PowerBI e o banco de dados do MySQL;
 3. Foram Adicionadas três consultas, uma para cada dataset, ao dashboard online do Power BI;
-4. A busca será feita em loop (indefinidamente).
+4. A busca será feita em looping (indefinidamente).
