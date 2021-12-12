@@ -3,7 +3,7 @@
 Elaborei um script no PowerShell que possibilita a inclusão de um novo dataset no dashboard online do Microsoft PowerBI em tempo real. Com o script, a busca no banco de dados desejado (sendo ele do MySQL) será feita indefinidamente e, assim, melhorando a eficiência do monitoramento. Os passos são:
 
 ### 1. Instalar Módulos 
-No Windows PowerShell, foram feitas as instalações dos módulos
+No Windows PowerShell, foram feitas as instalações dos módulos.
 
 ```
 Install-Module -Name MicrosoftPowerBIMgmt
@@ -13,7 +13,7 @@ Install-Module -Name MicrosoftPowerBIMgmt.Reports
 Install-Module -Name MicrosoftPowerBIMgmt.Profile
 ```
 ### 2. Conexão do PowerBI com banco MySQL
-Foi feita a conexão com o PowerBI e o banco de dados do MySQL
+Foi feita a conexão com o PowerBI e o banco de dados do MySQL.
 ```
 Connect-PowerBIServiceAccount
 Set-ExecutionPolicy # :Restricted
@@ -28,7 +28,7 @@ Open-MySQLConnection -server "seu_servidor" -database "sua_base" # Digitar seu u
 get-help Invoke-SQLQuery
 ```
 ### 3. Adicionar Consultas
-Foram Adicionadas três consultas, uma para cada dataset, ao dashboard online do Power BI
+Foram Adicionadas três consultas, uma para cada dataset, ao dashboard online do Power BI.
 ```
 $i = 10
 
@@ -47,6 +47,6 @@ Add-PowerBIRow -DatasetId $Dataset_ID -TableName RealTimeData -Rows (ConvertFrom
 }
 ```
 ### 4. Looping
-Por fim, a inserção dos dados da consulta será indefinidamente inseridos no dashboard online do Power BI
+Por fim, os dados da consulta serão indefinidamente inseridos no dashboard online do Power BI.
 
 
